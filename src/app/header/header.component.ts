@@ -8,15 +8,13 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   constructor() { }
-  
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
   ngOnInit(): void {
   }
-  menuVariable:boolean = false;
-  menu_icon:boolean = false;
-  toggleCollapsed(): void {
-    this.menuVariable = !this.menuVariable;
-    this.menu_icon = !this.menu_icon;
-  }
- 
   
 }

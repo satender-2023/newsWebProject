@@ -4,11 +4,11 @@
     <img src="../../assets/images/newss247.png" alt="" srcset="" class="newslogo">
   </a>
     <a class="navbar-brand" routerLink="">News247</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" [class.menu_icon_class]="menu_icon" (click)="toggleCollapsed()" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()" >
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse menu" [class.menuClass]="menuVariable" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse menu" [ngClass]="{ 'show': navbarOpen }" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>

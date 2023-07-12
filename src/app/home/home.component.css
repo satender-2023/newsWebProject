@@ -3,13 +3,16 @@
     flex-direction: row;
     margin-top: 10px;
 }
-.container-fluid{
+
+.container-fluid {
     /* width: 80%; */
 }
+
 .main-header {
     border-bottom: 1px solid #a1a1a1;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 32px;
 }
 
 .news-container {
@@ -18,17 +21,20 @@
     margin-top: 8px;
     padding-left: 0px;
     padding-right: 0px;
-} 
+}
+
 .news-left-container {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin-bottom: 47px;
 }
-.inmid-img{
+
+.inmid-img {
     width: 100%;
     height: auto;
 }
+
 .news-right-container {
     /* border: 1px solid red */
 }
@@ -46,9 +52,15 @@
 }
 
 .article-header {
-    font-size: x-large;
+    margin-top: 20px;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: red;
+    text-align: center;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.History {
+    border-bottom: 1px solid #a1a1a1;
 }
 
 .article-content {
@@ -59,23 +71,25 @@
     text-align: justify;
 
 }
-.thumb-content{
+
+.thumb-content {
     padding-left: 7px;
     padding-right: 7px;
 }
 
-
 .thumb-content a {
     text-decoration: none;
-   color: black !important;
+    color: black !important;
     font-weight: bold;
 }
+
 .thumb-content a:hover {
     color: red;
 }
-.thumb-content a:visited{
+
+.thumb-content a:visited {
     color: green;
-} 
+}
 
 .thumb-img {
     width: 100%;
@@ -84,6 +98,7 @@
     border-radius: 4px;
     padding: 5px;
 }
+
 .thumb-img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
@@ -118,26 +133,28 @@
     border-bottom: 1px solid #a1a1a1;
     margin: 10px;
 }
-.place{
+
+.place {
     font-weight: 500;
     margin-bottom: 16px;
-    }
+}
+
 /* right side  */
 .news-right-container {
     border-bottom: 1px solid #a1a1a1;
     text-align: center;
-  
-    
+
+
 }
 
 .related-container {
-    border: 1px solid #a1a1a1; 
+    border: 1px solid #a1a1a1;
     margin-bottom: 70px;
     border-radius: 4px;
- }
-    
- /* media query */
- @media only screen and (max-width: 768px) {
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
     .home-container {
         display: flex;
         flex-direction: column;
@@ -164,7 +181,12 @@
     .article-header {
         font-size: large;
     }
+
     .article-content {
         font-size: 16px;
+    }
+
+    .aboutBorder {
+        margin: -12px 120px;
     }
 }
