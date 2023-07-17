@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container-fluid">
-   
+
 </div>
 <div class="container-fluid home-container">
     <div class=" col-md-9 col-12 pl-0 pr-0 news-container">
@@ -38,7 +38,8 @@
                     <img src="../../../assets/images/warner.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="entertainment/updates">The Flash finally crosses $100 million mark in US: What does it
+                    <p class="thumb-head"><a routerLink="entertainment/updates">The Flash finally crosses $100 million
+                            mark in US: What does it
                             mean?</a>
                     </p>
                     <p class="thumb-card-para">
@@ -58,7 +59,8 @@
                     <img src="../../../assets/images/neeraj-chopra.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="sports/updates">Neeraj Chopra's coach Dr Klaus Bartonietz talks about Olympian's
+                    <p class="thumb-head"><a routerLink="sports/updates">Neeraj Chopra's coach Dr Klaus Bartonietz talks
+                            about Olympian's
                             fitness</a>
                     </p>
                     <p class="thumb-card-para">
@@ -80,7 +82,8 @@
                     <img src="../../../assets/images/technology-company.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="technology/updates">Tech company gives employees a recharge break, declares 9 days paid
+                    <p class="thumb-head"><a routerLink="technology/updates">Tech company gives employees a recharge
+                            break, declares 9 days paid
                             time off for all</a>
                     </p>
                     <p class="thumb-card-para">
@@ -104,7 +107,8 @@
                     <img src="../../../assets/images/peaky.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="entertainment/updates" class="thumb-anchor">We do not support! Peaky Blinders makers slam
+                    <p class="thumb-head"><a routerLink="entertainment/updates" class="thumb-anchor">We do not support!
+                            Peaky Blinders makers slam
                             Ron DeSantis for using show's footage in homophobic ad
                         </a>
                     </p>
@@ -123,7 +127,8 @@
                     <img src="../../../assets/images/match.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="sports/updates" class="thumb-anchor">CWC'23 Qualifier: Bas de Leede's heroics helps
+                    <p class="thumb-head"><a routerLink="sports/updates" class="thumb-anchor">CWC'23 Qualifier: Bas de
+                            Leede's heroics helps
                             Netherlands beat Scotland by four wickets, seal World Cup berth
                         </a>
                     </p>
@@ -144,7 +149,8 @@
                     <img src="../../../assets/images/Solar-dynamics-observatory-20230704.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="technology/updates" class="thumb-anchor">NASA spacecraft completes 16th close approach
+                    <p class="thumb-head"><a routerLink="technology/updates" class="thumb-anchor">NASA spacecraft
+                            completes 16th close approach
                             to Sun, appears unharmed
                         </a>
                     </p>
@@ -167,8 +173,9 @@
                     <img src="../../../assets/images/images.jpg" alt="" class="thumb-img">
                 </div>
                 <div class="col-8 thumb-content">
-                    <p class="thumb-head"><a routerLink="dailynews/updates" class="thumb-anchor">Massive fire engulfs two factories in
-                        Melbourne, Australia
+                    <p class="thumb-head"><a routerLink="dailynews/updates" class="thumb-anchor">Massive fire engulfs
+                            two factories in
+                            Melbourne, Australia
                         </a>
                     </p>
                     <p class="thumb-card-para">
@@ -181,9 +188,31 @@
             <!-- border bottom -->
             <div class="border"></div>
 
-
-
         </div>
+        <div class="filter">
+            <h3 class="branches text-center">Our Branches</h3>
+            <!-- border bottom -->
+            <div class="border"></div>
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchQuery" (input)="filterHeroes()"
+                placeholder="Search by branch name">
+
+            <br><br>
+            <table border="1" class="table table-striped">
+                <thead>
+                    <tr class="text-center">
+                        <th>Branch</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let hero of filteredHeroes" class="text-center">
+                        <td>{{ hero.name }}</td>
+                        <td>{{ hero.language }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </div>
 
