@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NotificationService } from './notification.service';
+import { FilterSearchComponent } from './filter-search/filter-search.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NotificationService } from './notification.service';
     // RelatedNewsComponent,
     HeaderComponent,
     SearchComponent,
+    FilterSearchComponent,
   ],
   imports: [
     BrowserModule,

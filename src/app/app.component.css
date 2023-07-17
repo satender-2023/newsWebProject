@@ -140,7 +140,7 @@
 .related-container {
     top: 56px !important;
     /* border-top: 1px solid #a1a1a1;  */
-    margin-bottom: 70px;
+    margin-bottom: 103px;
 }
 
 .right-side {
@@ -151,12 +151,20 @@
 .date {
     font-size: 13px;
 }
-
 .related {
     margin-top: 10px;
     width: 80%;
 }
-
+.form-control{
+    background-color: #f2f2f2;
+    border: 1px solid #343a40;
+}
+.table td{
+    font-size: 18px;
+}
+.table th{
+    font-size: 20px;
+}
 @media only screen and (max-width: 768px) {
     .home-container {
         display: flex;
