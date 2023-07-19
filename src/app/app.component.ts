@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'projectNews';
    searchQuery: string | undefined;
   filteredHeroes: any[] | undefined;
+  
   Heroes = [
     { name: 'News247 Bharat', language: "Hindi" },
     { name: 'News247 India', language: "Englsh" },
