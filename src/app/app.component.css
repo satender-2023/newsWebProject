@@ -151,21 +151,42 @@
 .date {
     font-size: 13px;
 }
+
 .related {
     margin-top: 10px;
     width: 80%;
 }
-.form-control{
+
+.form-control {
     background-color: #f2f2f2;
     border: 1px solid #343a40;
 }
-.table td{
+
+.table td {
     font-size: 18px;
     border: 1px solid #212529;
 }
-.table th{
-    font-size: 20px; border: 1px solid #212529;
+
+.table th {
+    font-size: 20px;
+    border: 1px solid #212529;
     border-radius: 10px;
+}
+
+.first {
+    font-size: larger;
+}
+
+.third {
+    color: red;
+}
+
+.second {
+    background-color: goldenrod;
+}
+
+.searchBox {
+    cursor: auto;
 }
 
 
@@ -175,15 +196,19 @@
         flex-direction: column;
         /* margin-top: 10px; */
     }
+
     .thumb-img {
         height: 123px;
     }
+
     .related-container {
         margin-bottom: 131px;
     }
+
     .home-container {
         margin-top: 36px;
     }
+
     .news-container {
         /* border: 1px solid black; */
         margin-bottom: 0px;
@@ -191,6 +216,7 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+
     .News-bigImg {
         height: 254px;
     }
@@ -198,20 +224,12 @@
     .main-header {
         font-size: 2.0rem !important;
     }
+
     .article-header {
         font-size: large;
     }
+
     .article-content {
         font-size: 16px;
     }
 }
-
-.first{
-    font-size: larger;
-}
- .third{
-    color: red;
- }
- .second{
-    background-color: goldenrod;
- }

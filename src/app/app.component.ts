@@ -10,13 +10,6 @@ export class AppComponent {
   title = 'projectNews';
    searchQuery: string | undefined;
   filteredHeroes: any[] | undefined;
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.filterHeroes()
-  }
-
   Heroes = [
     { name: 'News247 Bharat', language: "Hindi" },
     { name: 'News247 India', language: "Englsh" },
@@ -26,13 +19,49 @@ export class AppComponent {
     { name: 'News247 Kannada', language: "Kannad" },
     { name: 'News247 Bangla', language: "Bengali" },
     { name: 'News247 Sanjha', language: "Punjabi" },
-    { name: 'News247 Business', language: "English" },
-
-
+    { name: 'News247 Business', language: "English" }
   ];
 
-  filterHeroes() {
-    const query = this.searchQuery ?? ''; // Use empty string if searchQuery is undefined
-    this.filteredHeroes = this.Heroes.filter(hero => hero.name.toLowerCase().includes(query.toLowerCase())); 
+  constructor() { }
+
+  ngOnInit(): void {
+ 
+    this.filterHeroes();
   }
+
+
+  filterHeroes() {
+ 
+     const query = this.searchQuery ?? ''; // Use empty string if searchQuery is undefined
+    this.filteredHeroes = this.Heroes.filter(hero => hero.name.toLowerCase().includes(query.toLowerCase())|| hero.language.toLowerCase().includes(query.toLowerCase())); 
+  }
+
+  // mapWithNewTitle() {
+  //   let queryNew ='';
+  //   if(this.searchQuery) {
+  //       queryNew = this.searchQuery;
+    // }
+  //   this.filteredHeroes = this.Heroes.map(data=>{
+  //      if(data.name.toLowerCase().includes(queryNew.toLowerCase())) {
+  //        return 'my new text';
+  //      }
+  //      return 'not found;'
+  //   })
+  //   console.log('transformed data', this.filteredHeroes);
+  // }
+
+  // testDebug() {
+  //   this.filteredHeroes = this.Heroes.map(data => {
+  //       if(data.name.toLowerCase().includes('News247 Bharat'.toLowerCase())) {
+  //          return {
+  //           name: 'News247 world',
+  //           language: 'English'
+  //          }
+  //       }
+  //       return {
+  //         name: data.name,
+  //         language: data.language
+  //       }
+  //   })
+  // }
 }
