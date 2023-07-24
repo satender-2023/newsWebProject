@@ -1,0 +1,27 @@
+/* drag-and-drop.component.css */
+.dropzone {
+    width: 100%;
+    height: auto;
+    border: 2px dashed black;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  .dragitem {
+    width: 100%;
+    height: auto;
+    background-color:orange;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: move;
+  }
+  .container{
+    display: flex;
+    /* flex-direction: column; */
+
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }

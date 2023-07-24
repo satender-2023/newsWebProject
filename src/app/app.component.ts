@@ -37,6 +37,20 @@ export class AppComponent {
     this.filteredHeroes = this.Heroes.filter(hero => hero.name.toLowerCase().includes(query.toLowerCase())|| hero.language.toLowerCase().includes(query.toLowerCase())); 
   }
 
+  allowDrop(event: Event) {
+    event.preventDefault();
+  }
+
+  drag(event: DragEvent) {
+    event.dataTransfer!.setData('text', (event.target as HTMLElement).id);
+  }
+
+  drop(event: DragEvent) {
+    event.preventDefault();
+    const data = event.dataTransfer!.getData('text');
+    const dropzone = event.target as HTMLElement;
+    dropzone.appendChild(document.getElementById(data)!);
+  }
   // mapWithNewTitle() {
   //   let queryNew ='';
   //   if(this.searchQuery) {
