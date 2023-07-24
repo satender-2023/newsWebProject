@@ -1,3 +1,4 @@
+<div id="dropzone" (dragover)="allowDrop($event)" (drop)="drop($event)">
 <app-header></app-header>
 <div class="container-fluid">
 
@@ -5,6 +6,10 @@
 <div class="container-fluid home-container">
     <div class=" col-md-9 col-12 pl-0 pr-0 news-container">
         <router-outlet></router-outlet>
+
+
+
+
 
     </div>
     <div class="col-md-3 col-12 related-container pl-0 pr-0 ">
@@ -18,7 +23,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/singer.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/singer.jpg" alt="" class="thumb-img" id="dragitem1" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="dailynews/updates">Disney star and pop singer dies at 48.</a>
@@ -35,7 +40,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/warner.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/warner.jpg" alt="" class="thumb-img" id="dragitem2" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="entertainment/updates">The Flash finally crosses $100 million
@@ -56,7 +61,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/neeraj-chopra.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/neeraj-chopra.jpg" alt="" class="thumb-img" id="dragitem3" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="sports/updates">Neeraj Chopra's coach Dr Klaus Bartonietz talks
@@ -79,7 +84,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/technology-company.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/technology-company.jpg" alt="" class="thumb-img" id="dragitem4" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="technology/updates">Tech company gives employees a recharge
@@ -104,7 +109,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/peaky.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/peaky.jpg" alt="" class="thumb-img" id="dragitem5" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="entertainment/updates" class="thumb-anchor">We do not support!
@@ -124,7 +129,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/match.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/match.jpg" alt="" class="thumb-img" id="dragitem6" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="sports/updates" class="thumb-anchor">CWC'23 Qualifier: Bas de
@@ -146,7 +151,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/Solar-dynamics-observatory-20230704.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/Solar-dynamics-observatory-20230704.jpg" alt="" class="thumb-img" id="dragitem7" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="technology/updates" class="thumb-anchor">NASA spacecraft
@@ -170,7 +175,7 @@
 
             <div class="container right-side pl-0 pr-0">
                 <div class="col-4 pl-0 pr-0">
-                    <img src="../../../assets/images/images.jpg" alt="" class="thumb-img">
+                    <img src="../../../assets/images/images.jpg" alt="" class="thumb-img" id="dragitem8" draggable="true" (dragstart)="drag($event)">
                 </div>
                 <div class="col-8 thumb-content">
                     <p class="thumb-head"><a routerLink="dailynews/updates" class="thumb-anchor">Massive fire engulfs
@@ -216,6 +221,6 @@
     </div>
 </div>
 
-
+</div>
 
 <app-footer></app-footer>

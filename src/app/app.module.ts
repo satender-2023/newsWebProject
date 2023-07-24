@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NotificationService } from './notification.service';
 import { FilterSearchComponent } from './filter-search/filter-search.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FilterSearchComponent } from './filter-search/filter-search.component';
     HeaderComponent,
     SearchComponent,
     FilterSearchComponent,
+    DragDropComponent,
   ],
   imports: [
     BrowserModule,

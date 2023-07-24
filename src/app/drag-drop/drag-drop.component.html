@@ -1,0 +1,15 @@
+<!-- drag-and-drop-->
+<div class="container">
+<div id="dragitem1" class="dragitem" draggable="true" (dragstart)="drag($event)">
+    <img src="../../assets/images/images (1).jpg" alt="" >
+<p style="padding: 10px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam nihil quisquam totam vitae, modi neque incidunt! Dolor, nulla rerum aliquid doloribus, ullam totam ea necessitatibus quaerat, fugiat distinctio officiis.</p>
+<p style="padding: 10px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo commodi tempora dolor quasi eius fugiat aperiam est tempore quisquam maxime nobis molestias cumque enim deleniti rerum accusamus assumenda, adipisci optio quod! Et nostrum itaque pariatur reiciendis repellat velit saepe asperiores modi, nesciunt, nobis, dolorem vitae ipsam laboriosam dicta laborum? Perferendis, assumenda aliquid, impedit fuga sit qui illum veritatis quia dolores ex ea amet. Laboriosam suscipit a enim accusamus beatae dignissimos quibusdam, maxime atque dolorem corrupti consequuntur reprehenderit veniam sequi perspiciatis possimus soluta. Cum dolor, neque tempore quo labore, dignissimos in maxime quod odit sapiente numquam, sunt nisi consectetur necessitatibus?</p>
+</div>
+<div >
+   <img src="../../assets/images/mcdowell-golf.jpg" alt="" id="dragitem2" class="dragitem" draggable="true" (dragstart)="drag($event)">
+</div>
+
+<div id="dropzone" class="dropzone" (dragover)="allowDrop($event)" (drop)="drop($event)">
+    Drop Zone
+</div>
+</div>

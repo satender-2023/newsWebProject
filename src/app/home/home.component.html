@@ -1,3 +1,4 @@
+<div id="dropzone" (dragover)="allowDrop($event)" (drop)="drop($event)">
 <div>
     <p style="color: green;"><b >Search Result :</b> {{notificationMessage}}</p>
 </div>
@@ -16,7 +17,7 @@
             <div class="news-left-container">
                 <div class=" news-left-container">
                     <div>
-                        <img src="../../assets/images/News247.svg.png" alt="" class="News-bigImg">
+                        <img src="../../assets/images/News247.svg.png" alt="" class="News-bigImg" id="dragitem1" draggable="true" (dragstart)="drag($event)">
                         <p class="article-header">
                             About Us
                         </p>
@@ -45,7 +46,7 @@
                 </div>
 
 
-
+            </div>
 
         </div>
 
